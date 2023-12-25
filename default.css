@@ -1,0 +1,17 @@
+.container{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+#buy-btn a {
+    display: flex;
+    padding: 0.9375rem 1.5625rem;
+    align-items: flex-start;
+    gap: 1.25rem;
+    border-radius: 1.875rem;
+    background: #2476FF;
+    color: white;
+}
