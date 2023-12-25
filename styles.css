@@ -1,28 +1,10 @@
 
 .topsection{display: flex;}
 
-.topsectionbackground{
-    width: 63.96875rem;
-    height: 32.3125rem;
-    flex-shrink: 0;
-}
-.leftvector{
-    width: 63.96875rem;
-    height: 32.3125rem;
-    flex-shrink: 0;
-    fill: linear-gradient(313deg, rgba(217, 217, 217, 0.44) 17.61%, rgba(217, 217, 217, 0.00) 55.85%);
-    
-}
-.rightvector{
-    width: 19.75rem;
-    height: 27.6875rem;
-    flex-shrink: 0;
-    fill: #E1E7EF;
-}
 
 .header{
     display: flex;
-    width: 64rem;
+    width: 100%;
     height: 5.375rem;
     padding: 0.625rem 1.875rem;
     justify-content: space-between;
@@ -30,11 +12,11 @@
 }
 
 .navbar{
-    position: fixed;
+    position: relative;
+    width: 100%;
     top: 0;
     right: 0;
     left: 0;
-    z-index: 100;
     transition: ease-in-out 0.3s;
 }
 
@@ -75,7 +57,7 @@
 #selected-nav a {color:#2476FF;}
 
 [aria-controls="navbarDropdown"] {
-display: none;
+    display: none;
 }
 
 .nav-list{
@@ -92,6 +74,66 @@ display: none;
      margin-right: 2.5rem;
      line-height: 1.25rem;
     }
+.topsection{ width: 100%}
+
+.hero-section{
+    display: flex;
+    width: 100%;
+    padding: 2.5rem 1.875rem 0rem 1.875rem;
+    align-items: flex-start;
+    gap: 0.625rem;
+}
+
+.left-btns{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    align-self: stretch;
+}
+.left-btns button{
+   display: flex;
+   border: 1px transparent;
+   border-radius: 1.875rem;
+   background: #2476FF;
+   padding: 0.9375rem 1.5625rem;
+   align-items: center;
+   gap: 0.5rem;
+   color: white;
+}
+.left-btns button svg {
+    fill: #FFF;}
+
+.left-part{
+    display: flex;
+    padding-bottom: 3.75rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.left-part h1 {  
+    font-size: 40px;
+    width: 275px;
+    margin-bottom: 0;
+}
+.left-part p {
+    color: #666;
+    margin: 0px 0 1.88rem 0;}
+
+.right-part{
+    height: 25.375rem;
+    flex: 1 0 0;
+}
+
+
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
     [aria-controls="navbarDropdown"] {
         display: block;
