@@ -9,10 +9,11 @@
     padding: 0.625rem 1.875rem;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .navbar{
-    position: relative;
+    position: fixed;
     width: 100%;
     top: 0;
     right: 0;
@@ -79,7 +80,7 @@
 .hero-section{
     display: flex;
     width: 100%;
-    padding: 2.5rem 1.875rem 0rem 1.875rem;
+    padding: 0.25rem 1.875rem 0rem 1.875rem;
     align-items: flex-start;
     gap: 0.625rem;
 }
@@ -130,8 +131,8 @@
 
 .right-part img {
    display: flex;
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   padding: 1rem;
   border-radius: 2.5rem;
   align-items: flex-start;
@@ -143,14 +144,45 @@
 }
 
 
-.right-part:nth-child(1){
+.right-part img:nth-child(1){
+    position: relative;
+    top:1.25rem;
+    left: 4.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
 }
-.right-part img:nth-child(2){}
-.right-part img:nth-child(3){}
-.right-part img:nth-child(4){}
-.right-part img:nth-child(5){}
-.right-part img:nth-child(6){}
-.right-part img:nth-child(7){}
+.right-part img:nth-child(2){
+    position: relative;
+    top:1.65rem;
+    left:7.9rem;
+}
+.right-part img:nth-child(3){
+    position: relative;
+    top: 1.65rem;
+    left: 17rem;
+}
+.right-part img:nth-child(4){
+    position: relative;
+    right: 11.5rem;
+    top: 10rem;
+}
+.right-part img:nth-child(5){
+    position: relative;
+  top: 11rem;
+  right: 5.45rem;
+}
+.right-part img:nth-child(6){
+    position: relative;
+    right: 15rem;
+    top: 18rem;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+.right-part img:nth-child(7){
+    position: relative;
+    top: 20rem;
+    right: 3rem;
+}
 
 
 
