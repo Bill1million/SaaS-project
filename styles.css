@@ -9,7 +9,7 @@
     padding: 0.625rem 1.875rem;
     justify-content: space-between;
     align-items: center;
-    
+    z-index: 100; 
 }
 
 .navbar{
@@ -19,6 +19,7 @@
     right: 0;
     left: 0;
     transition: ease-in-out 0.3s;
+    background-color: white;
 }
 
 .navbar.sticky{
@@ -91,7 +92,7 @@
     gap: 1.5rem;
     align-self: stretch;
 }
-.left-btns button{
+.left-btns span, .left-banner span {
    display: flex;
    border: 1px transparent;
    border-radius: 1.875rem;
@@ -101,9 +102,6 @@
    gap: 0.5rem;
    color: white;
 }
-.left-btns button svg {
-    fill: #FFF;}
-
 .left-part{
     display: flex;
     padding-bottom: 3.75rem;
@@ -185,6 +183,108 @@
 }
 
 
+.benefits{
+    display: flex;
+    padding: 7.5rem 0rem 5rem 0rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.75rem;
+    align-self: stretch;
+  }
+
+.benefits-header{text-align: center;}
+.benefits-header h1 {margin: 0;}
+  
+
+
+  .benefits-list {
+    display: flex;
+    align-self: center;
+    gap: 1.25rem;
+  }
+
+  .benefits p {
+    line-height: 1.5rem;
+    color: #677788;;
+    margin: 0;
+    font-size: 0.875rem;
+    padding-bottom: 1.25rem;
+  }
+  .benefits-header p {
+    margin-top: 0.63rem;
+    font-size: 1.28rem;
+    font-weight: 500;
+}
+  .benefits a{font-size: 1.25rem;}
+  
+  
+  .card1, .card2, .card3, .card4 {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #FFF;
+    background: #FFF;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
+    padding: 1.25rem;
+    width: 225px;
+    align-items: flex-start;
+  }
+.card1 img, .card2 img, .card3 img, .card4 img {
+    width: 3.25rem;
+    height: 3.25rem
+  }
+  .banner-section{
+    display: flex;
+    width: 100%;
+    background-color:rgba(248, 250, 254, 1);
+    margin: 0 0 5rem 1.8rem;   
+    justify-content: space-between;
+}
+
+.left-banner{
+    display: flex;
+    width: 28.125rem;
+    padding: 0.625rem 1.875rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.left-banner p{
+    font-size: 1.625rem;
+}
+
+.right-banner img { 
+    width: 36.5rem;
+    margin-top: 9rem
+}
+.why{
+    display: flex;
+    width: 75%;
+    text-align: center;
+    align-self: center;
+}
+.why-header p {
+    font-size: 1.5rem;
+    color: grey;
+    margin-bottom: 2.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -216,17 +316,14 @@
         grid-column: 1 / 3;
     }
 }
+display: grid;
+  grid-template-columns:repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  border: 2px solid rgb(163, 154, 154);
+  border-radius: 15px;
+  box-shadow: 0px 2px rgba(128, 128, 128, 0.212);
+  padding: 20px;
+  width: 520px;
+  margin-top: 20px;
 
-*,
-::after,
-::before {
-    box-sizing: border-box;
-}
-
-ul{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-a {text-decoration: none;}
+  
