@@ -79,6 +79,8 @@
     width: 100%;
     align-items: flex-start;
     gap: 0.625rem;
+    place-content: center;
+    align-items: center;
 }
 
 .left-btns{
@@ -332,7 +334,14 @@
     color: black;
 }
 
+.hubspot{
+    display: flex;
+}
+.person{
+    flex: 1;
+    display: flex;
 
+}
 
 
 
