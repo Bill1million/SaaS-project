@@ -81,6 +81,8 @@
     gap: 0.625rem;
     place-content: center;
     align-items: center;
+    background-color: #f7f7f7;
+    padding-bottom: 5rem;
 }
 
 .left-btns{
@@ -89,7 +91,7 @@
     gap: 1.5rem;
     align-self: stretch;
 }
-.left-btns span, .left-banner span {
+.left-btns span a, .left-banner span a{
    display: flex;
    border: 1px transparent;
    border-radius: 1.875rem;
@@ -249,7 +251,7 @@
 }
 
 .right-banner img { 
-    width: 36.5rem;
+    width: 42.5rem;
     margin-top: 9rem
 }
 .why{
@@ -271,6 +273,7 @@
     margin-bottom: 5rem;
     display: flex;
     justify-content: center;
+    place-self: center;
 }
 .bull-box{
     display: flex;
@@ -301,7 +304,7 @@
 .bull-circle{
     position: relative;
     background-color: #d1dde8;
-    height: 4.123rem ;
+    height: 3.123rem ;
     width: 4.123rem;
     border-radius: 2.563rem;
     min-width: 3.12rem;
@@ -340,8 +343,9 @@
 .person{
     flex: 1;
     display: flex;
-
 }
+
+
 
 
 
