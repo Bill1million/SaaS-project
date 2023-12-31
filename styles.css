@@ -2,20 +2,13 @@
 .topsection{display: flex;}
 
 
-.header{
-    display: flex;
-    height: 5.375rem;
-    padding: 0.625rem 1.875rem;
-    justify-content: space-between;
-    align-items: center;
-     
-}
+
 
 .navbar{
-    position: fixed;
+    position: sticky;
     transition: ease-in-out 0.3s;
     background-color: white;
-    width: 100%;
+    z-index: 1000;
 }
 
 .navbar.sticky{
@@ -44,10 +37,7 @@
    pointer-events: none;
 }
 
-.navbar .container {
-    display: flex;
-    align-items: center;
-}
+
 .navbar-brand{
     width: 9.68125rem;
     height: 2.88125rem;
@@ -61,6 +51,7 @@
 .nav-list{
     display: flex;
     align-items: center;
+    
 }
 
 .nav-link a {
@@ -128,8 +119,8 @@
 
 .right-part img {
    display: flex;
-  width: 5rem;
-  height: 5rem;
+  width: 3rem;
+  height: 3rem;
   padding: 1rem;
   border-radius: 2.5rem;
   align-items: flex-start;
@@ -144,8 +135,8 @@
     position: relative;
     top:1.25rem;
     left: 4.5rem;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 .right-part img:nth-child(2){
     position: relative;
@@ -171,8 +162,8 @@
     position: relative;
     right: 15rem;
     top: 18rem;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 .right-part img:nth-child(7){
     position: relative;
@@ -304,14 +295,13 @@
 .bull-circle{
     position: relative;
     background-color: #d1dde8;
-    height: 3.123rem ;
-    width: 4.123rem;
+    height: 2.6875rem ;
     border-radius: 2.563rem;
     min-width: 3.12rem;
     color: #2476FF;
     text-align: center;
     font-size: 2rem;
-    padding-top: 0.95rem;
+    padding-top: 0.5rem;
     margin-left: 0.15rem;
     margin-right: 0.15rem;
 }
@@ -322,8 +312,9 @@
 }
 
 .play-banner div img {
-    width: 75rem;
+    width: 80rem;
     height: 30rem;
+    margin: 0 2rem;
 }
 .play-vid a i {
     position: relative;
@@ -345,8 +336,55 @@
     display: flex;
 }
 
+.person img:nth-child(1){
+    position: relative;
+    width: 14.5rem;
+    height: 23rem;
+    bottom: -4rem;
+    left: 1.7rem;
+}
+.person img:nth-child(2){
+    position: relative;
+    width: 23rem;
+    height: 26.5rem;
+    left: -9rem;
+    bottom: 2rem;
+}
 
+.hub-icon{
+    margin-bottom: 2rem;
+    width: 10rem;
+    padding-top: 4.5rem;
+}
 
+.hub-quote {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 3rem;
+}
+.signiture {
+    font-size:1.5rem;
+    font-weight:600;
+}
+.signiture p {font-size: 1rem;
+font-weight: 600;
+color: #666;
+margin: 0;
+}
+.brand-bar{display: grid;}
+.brand-bar h3{
+    text-align: center;
+    color: #666;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+.brands{
+    display: flex;
+    height: 3rem;
+    gap: 8.25rem;
+    padding: 0 2.5rem; 
+    margin-bottom: 5.25rem;
+}
 
 
 
