@@ -88,11 +88,11 @@
 .hero-section{
     display: flex;
     width: 100%;
-    align-items: flex-start;
     gap: 10.625rem;
     place-content: center;
     align-items: center;
     background-color: #f7f7f7;
+    margin: 0 20rem;
 }
 
 .left-btns{
@@ -204,25 +204,25 @@
   
 
 
-  .benefits-list {
+.benefits-list {
     display: flex;
     align-self: center;
     gap: 1.75rem;
   }
 
-  .benefits p {
+.benefits p {
     line-height: 1.5rem;
     color: #677788;;
     margin: 0;
     font-size: 0.875rem;
     padding-bottom: 1.25rem;
   }
-  .benefits-header p {
+.benefits-header p {
     margin-top: 0.63rem;
     font-size: 1.28rem;
     font-weight: 500;
 }
-  .benefits a{font-size: 1.25rem;}
+.benefits a{font-size: 1.25rem;}
   
   
   .card1, .card2, .card3, .card4 {
@@ -248,7 +248,7 @@ color: white;
 padding: 0.25rem 0.63rem;
 }
 
-  .banner-section{
+.banner-section{
     display: flex;
     justify-content: space-between;
     margin: 0 0 5rem 1.8rem;   
@@ -266,9 +266,11 @@ padding: 0.25rem 0.63rem;
 .left-banner p{
     font-size: 1.625rem;
 }
-
+.right-banner{
+    display: flex;
+    flex: 1;
+}
 .right-banner img { 
-    width: 42.5rem;
     margin-top: 9rem;
     margin-bottom: -0.25rem;
 }
@@ -279,6 +281,7 @@ padding: 0.25rem 0.63rem;
     width: 75%;
     text-align: center;
     margin: auto;
+    place-content: center;
 }
 .why-header p {
     font-size: 1.5rem;
@@ -363,6 +366,7 @@ padding: 0.25rem 0.63rem;
 .person{
     flex: 1;
     display: flex;
+    justify-content:end;
 }
 
 .person img:nth-child(1){
@@ -379,7 +383,9 @@ padding: 0.25rem 0.63rem;
     left: -7rem;
     bottom: 0;
 }
-.person-quote {padding-right: 1.8rem;}
+.person-quote {
+    flex: 1;
+    padding-right: 1.8rem;}
 
 .hub-icon{
     margin-bottom: 2rem;
@@ -391,6 +397,7 @@ padding: 0.25rem 0.63rem;
     font-size: 1.9rem;
     line-height: 2.5rem;
     margin-bottom: 3rem;
+    max-width: 32rem;
 }
 .signiture {
     font-size:1.5rem;
@@ -401,12 +408,15 @@ font-weight: 600;
 color: #666;
 margin: 0;
 }
-.brand-bar{display: grid;}
+.brand-bar{
+    display: grid;
+    justify-items: center;
+}
 .brand-bar h3{
     text-align: center;
     color: #5F6368;
     font-size: 1.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 3rem;  
 }
 .brands{
     display: flex;
