@@ -92,7 +92,6 @@
     place-content: center;
     align-items: center;
     background-color: #f7f7f7;
-    margin: 0 20rem;
 }
 
 .left-btns{
@@ -207,17 +206,17 @@
 .benefits-list {
     display: flex;
     align-self: center;
-    gap: 1.75rem;
+    gap: 2.5rem;
   }
 
 .benefits p {
-    line-height: 1.5rem;
+    line-height: 2rem;
     color: #677788;;
     margin: 0;
-    font-size: 0.875rem;
+    font-size: 1.3rem;
     padding-bottom: 1.25rem;
   }
-  
+
 .benefits-header p {
     margin-top: 0.63rem;
     font-size: 1.28rem;
@@ -233,7 +232,7 @@
     background: #FFF;
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
     padding: 1.25rem;
-    width: 225px;
+    width: 262px;
     align-items: flex-start;
   }
 .card1 img, .card2 img, .card3 img, .card4 img {
@@ -247,6 +246,7 @@ border-radius: 1rem;
 background-color: rgba(1, 201, 167, 1);
 color: white;
 padding: 0.25rem 0.63rem;
+font-weight: 800;
 }
 
 .banner-section{
@@ -332,7 +332,7 @@ padding: 0.25rem 0.63rem;
     color: #2476FF;
     text-align: center;
     font-size: 2rem;
-    padding-top: 0.95rem;
+    padding-top: 0.75rem;
     margin-left: 0.15rem;
     margin-right: 0.15rem;
 }
@@ -372,15 +372,15 @@ padding: 0.25rem 0.63rem;
 
 .person img:nth-child(1){
     position: relative;
-    width: 14.5rem;
-    height: 23rem;
+    width: 15.5rem;
+    height: 25rem;
     bottom: -10rem;
     left: 3.7rem;
 }
 .person img:nth-child(2){
     position: relative;
-    width: 25rem;
-    height: 29.5rem;
+    width: 27rem;
+    height: 31.5rem;
     left: -7rem;
     bottom: 0;
 }
