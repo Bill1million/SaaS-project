@@ -240,12 +240,12 @@
     height: 3.25rem
   }
 
-.card3 h2 button {
+.sketch {
 border: 1px transparent;
 border-radius: 1rem;
 background-color: rgba(1, 201, 167, 1);
 color: white;
-padding: 0.25rem 0.63rem;
+padding: 0.3rem 0.63rem;
 font-weight: 800;
 }
 
@@ -454,9 +454,9 @@ margin: 0;
     flex-direction: column;
     justify-content: center;
     border: 1px transparent;
-    box-shadow: 0px 10px 20px 0px;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.15);
     padding: 0 2.5rem;
-    width: 23rem;
+    width: 27rem;
 }
 .plan .left-btns {
     flex-direction: column;
@@ -477,10 +477,13 @@ margin: 0;
     line-height: 2rem;
 }
 
-.plan-features{flex: 1;}
+.plan-features{
+    width: 61%;
+    flex: 1;
+}
 .bottom-plan-row, .top-plan-row { 
     display: flex;
-    max-width: 13.9rem;
+    max-width: 52.9rem;
     gap: 1.25rem;
     align-items: flex-start;
     font-size: 1.5rem;
@@ -495,9 +498,38 @@ margin: 0;
     color: #677788;
     line-height: 1.75rem;
 }
+.hire{
+    display: flex;
+    background-color:#20335B; 
+    justify-content: center;
+}
+
+.left-hire{
+    display: flex;
+    flex-direction: column;
+    gap: 3.75rem;
+    color: #f7f7f7;
+    padding-left: 2rem;
+    line-height: 1.75rem;
+}
 
 
-
+.people-img-bar{
+    display: flex;
+}
+.people-img-bar img {
+    border-radius: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    clip-path: none;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    border: 1px transparent;
+    border-radius: 1.25rem;
+    background-color: #f7f7f7;
+}
 
 
 
