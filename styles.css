@@ -235,7 +235,7 @@
     width: 262px;
     align-items: flex-start;
   }
-.card1 img, .card2 img, .card3 img, .card4 img {
+.card1 img, .card2 img, .card3 img, .card4 img, .top-plan-left img, .top-plan-right img, .bottom-plan-left img, .bottom-plan-right img {
     width: 3.25rem;
     height: 3.25rem
   }
@@ -427,8 +427,74 @@ margin: 0;
     margin-bottom: 5.25rem;
 }
 
+.pricing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 7.5rem;
+    gap: 3.5rem;
+}
+.price-title h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;  
+}
+.price-title p {
+    text-align: center;
+    font-size: 1.63rem;
+    color: #677788;
+}
+.plan-table{
+    gap: 1.86rem;
+    display: flex;
+}
+.plan{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px transparent;
+    box-shadow: 0px 10px 20px 0px;
+    padding: 0 2.5rem;
+    width: 23rem;
+}
+.plan .left-btns {
+    flex-direction: column;
+    place-items: flex-start;
+    gap: 0;
+    color: grey;
+}
+.planprice{
+    display: flex;
+    align-items: center;
+    font-size: 3.125rem;
+    place-items: end;
+}
+.planprice p{margin-bottom: 0;}
+.plan-p{
+    font-size: 1.5rem;
+    color: #5F6368;
+    line-height: 2rem;
+}
 
-
+.plan-features{flex: 1;}
+.bottom-plan-row, .top-plan-row { 
+    display: flex;
+    max-width: 13.9rem;
+    gap: 1.25rem;
+    align-items: flex-start;
+    font-size: 1.5rem;
+}
+.top-plan-left, .top-plan-right, .bottom-plan-left, .bottom-plan-right{
+    width: 15rem;
+    padding: 1.2rem;
+    min-width: 23rem;
+}
+.top-plan-left p, .top-plan-right p, .bottom-plan-left p, .bottom-plan-right p{
+    font-size: 1.25rem;
+    color: #677788;
+    line-height: 1.75rem;
+}
 
 
 
