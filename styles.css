@@ -511,6 +511,7 @@ margin: 0;
     color: #f7f7f7;
     padding-left: 2rem;
     line-height: 1.75rem;
+    justify-content: center;
 }
 
 
@@ -529,6 +530,7 @@ margin: 0;
     border: 1px transparent;
     border-radius: 1.25rem;
     background-color: #f7f7f7;
+    margin: 2rem;
 }
 
 
