@@ -94,6 +94,11 @@
     background-color: #f7f7f7;
 }
 
+.left-bottom-person{
+    display: flex;
+    flex-direction: column;
+}
+
 .left-btns{
     display: flex;
     align-items: center;
@@ -504,12 +509,13 @@ margin: 0;
     display: flex;
     background-color:#20335B; 
     justify-content: center;
+    gap: 3.5rem;
 }
 
 .left-hire{
     display: flex;
     flex-direction: column;
-    gap: 3.75rem;
+    gap: 3.5rem;
     color: #f7f7f7;
     padding-left: 2rem;
     line-height: 1.75rem;
@@ -519,6 +525,7 @@ margin: 0;
 .left-hire-quote{
     font-style: italic;
     line-height: 1.5rem;
+    width: 22rem;
 }
 .left-top-hire p {
     font-size: 1rem;
@@ -530,14 +537,24 @@ margin: 0;
     margin: 1rem 0;
 }
 
+.left-bottom-person h2 {margin: 0;}
+.left-bottom-person p {
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+    color: #5F6368;
+}
+
+
 .people-img-bar{
-    display: flex;
+    display: flex; 
+    gap: 1.63rem;
 }
 .people-img-bar img {
-    border-radius: 1.25rem;
-    width: 2.5rem;
-    height: 2.5rem;
+    border-radius: 2.25rem;
+    width: 3.5rem;
+    height: 3.5rem;
     clip-path: none;
+   
 }
 .form{
     display: flex;
@@ -555,8 +572,12 @@ margin: 0;
     display: flex;
     flex-direction: column;
     gap: 1.25rem; 
+    
 }
-
+.form-info h3{
+    text-align: start;
+    line-height: 1.75rem;
+}
 .input-row1, .input-row2, .input-row3 {
     display: flex;
     justify-content: center;
@@ -567,10 +588,12 @@ margin: 0;
     padding: 0.6rem;
     border-radius: 0.312rem;
     border: 1px solid #5F6368;
+    
 }
 .policy-links {
     text-decoration:underline;
     text-decoration-style: dotted;
+    color: #2373fd;
 }
 .project-input input{
     width: 24.5rem;
@@ -598,6 +621,50 @@ select, option {
     width: 2.23rem;
     height: 1.32rem;
 }
+.start-btn{
+    margin-top: 2.3rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 1.875rem 2.5rem 1.875rem;
+    align-items: center;
+    gap: 4.5rem;
+}
+
+.top-foot{
+    display: flex;
+    gap: 4.5rem;
+}
+.logo-contact img {
+    width: 6.25rem;
+    height: 1.8rem;
+}
+.foot-nav{
+    display: flex;
+    gap: 3.5rem;
+}
+
+.logo-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;}
+
+.foot-nav div ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: #677788;
+    font-weight: 515;
+}
+
+
+
+
+
+
+
 
 
 
