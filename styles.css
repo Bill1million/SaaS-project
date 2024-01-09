@@ -144,7 +144,7 @@
 
 .right-part img {
    display: flex;
-  height: 5rem;
+  height: 3rem;
   padding: 1rem;
   border-radius: 2.5rem;
   align-items: flex-start;
@@ -159,7 +159,7 @@
     position: relative;
     top:1.25rem;
     left: 4.5rem;
-    height: 3.5rem;
+    height: 2.5rem;
 }
 .right-part img:nth-child(2){
     position: relative;
@@ -185,7 +185,7 @@
     position: relative;
     right: 15rem;
     top: 18rem;
-    height: 3.5rem;
+    height: 2.5rem;
 }
 .right-part img:nth-child(7){
     position: relative;
@@ -331,7 +331,7 @@ font-weight: 800;
 .bull-circle{
     position: relative;
     background-color: rgba(236, 242, 255, 1);
-    height: 4rem;
+    height: 3.5rem;
     border-radius: 2.563rem;
     min-width: 4rem;
     color: #2476FF;
@@ -677,6 +677,13 @@ footer{
         background-color: transparent;
         text-decoration: none;
 }
+.company ul li a span{
+    border-radius: 0.2875rem;
+    background: #2576FF;
+    color: #f7f7f7;
+    padding: .25rem;
+    font-size: 0.75rem;
+}
 .resources ul li{
     display: flex;
     gap: 0.53rem;
@@ -697,15 +704,48 @@ footer{
     width: 100%;
 }
 
-.policy-socials{display: flex;}
+.policy-socials{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
 
 .policy-links, .policy-links :any-link {
     font-size: 1.5rem;
     color: #677788;
 }
 
+.social-links {
+    display:flex;
+    gap: 1.25rem;
 
-
+}
+.social-links a i{
+    display: flex;
+    border: #ECF2FF;
+    width: 1.5rem;
+    height: 1.5rem;
+    align-items: center;
+    padding-left: 0.5rem;
+    border-radius: 0.3125rem;
+    background-color: #ecf2ff;
+    color: #677788;
+}
+.social-links a:nth-child(2) i{
+    background-color:#677788;
+    border: #677788;
+    color:#ECF2FF ;
+}
+.copyrights-cookies{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    text-align: center;
+    color: #677788;
+}
+.copyrights-cookies p{
+    width: 49rem;
+}
 
 
 
