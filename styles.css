@@ -630,7 +630,7 @@ footer{
     flex-direction: column;
     padding: 5rem 1.875rem 2.5rem 1.875rem;
     align-items: center;
-    gap: 4.5rem;
+    gap: 3.5rem;
 }
 
 .top-foot{
@@ -638,8 +638,8 @@ footer{
     gap: 4.5rem;
 }
 .logo-contact img {
-    width: 6.25rem;
-    height: 1.8rem;
+    width: 7.25rem;
+    height: 2.8rem;
 }
 .foot-nav{
     display: flex;
@@ -649,7 +649,20 @@ footer{
 .logo-contact{
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;}
+    gap: 1.25rem;
+    padding-top: 0.7rem;
+}
+
+.contact-link{
+    color: #677788;
+}
+
+.contact-phone a {  
+    color: #2476FF;
+    background-color: transparent;
+    text-decoration: none;
+  } 
+
 
 .foot-nav div ul{
     display: flex;
@@ -659,9 +672,37 @@ footer{
     font-weight: 515;
 }
 
+.foot-nav div ul a{   
+        color: #677788;
+        background-color: transparent;
+        text-decoration: none;
+}
+.resources ul li{
+    display: flex;
+    gap: 0.53rem;
+}
+.resources ul li span{
+    color:#677788; 
+    padding-top: 0.1rem;
+}
+.resources ul li a {padding-top: 0.3rem;}
+.hr{
+    width: 100%;
+    height: 5px;
+    color: #E6E9F2
+} 
 
+.bottom-foot{
+    display: flex;
+    width: 100%;
+}
 
+.policy-socials{display: flex;}
 
+.policy-links, .policy-links :any-link {
+    font-size: 1.5rem;
+    color: #677788;
+}
 
 
 
