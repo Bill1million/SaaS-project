@@ -14,10 +14,7 @@ a {text-decoration: none;}
 .nav-container{
     display: flex;
     height: 2.9rem;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0 3.125rem;
     justify-content: space-between;
     margin-top: 2rem;
 }
@@ -29,4 +26,7 @@ a {text-decoration: none;}
     border-radius: 1.875rem;
     background: #2476FF;
     color: white;
+}
+#selected{
+    color: #2476FF;
 }
