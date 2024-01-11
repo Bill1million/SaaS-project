@@ -847,6 +847,28 @@ footer{
     flex-direction: column;
     align-items: center;
 }
+.plan-table{
+    flex-direction: column;
+    align-items: center;
+}
+.plan{width: 40rem;}
+.planprice{padding-left: 15rem;}
+.plan-features{width: auto;}
+.top-plan-row, .bottom-plan-row{gap: 0;}
+.plan-features{padding: 0.5rem;}
+.hire{flex-wrap: wrap;}
+.copyrights-cookies p {width: 100%}
+.features{padding-left: 3rem;}
+
+.foot-nav{
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.left-hire{
+    flex-direction: row;
+    padding: 4rem 4rem 0 4rem;
+}
+
 
 }
 
