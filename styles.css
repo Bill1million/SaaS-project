@@ -363,24 +363,24 @@ font-weight: 800;
 
 .person{
     flex: 1;
-    display: flex;
-    justify-content:end;
+    display: grid;
+    grid-template-columns:repeat(14, 1fr);
+    grid-template-rows: repeat(5, 1fr); 
 }
 
 .person img:nth-child(1){
-    position: relative;
-    width: 15.5rem;
-    height: 25rem;
-    bottom: -10rem;
-    left: 3.7rem;
+    grid-column: 6 / 9;
+    grid-row: 1 / 5;
+    height: 28rem;
+    width: 20rem;
+   
 }
 
 .person img:nth-child(2){
-    position: relative;
-    width: 27rem;
-    height: 31.5rem;
-    left: -7rem;
-    bottom: 0;
+   grid-column: 7;
+   grid-row: 1 / 4 ;
+    height: 24rem;
+  
 }
 
 .person-quote {
@@ -456,6 +456,15 @@ margin: 0;
     gap: 1.86rem;
     display: flex;
 }
+.plan-price{font-size: 4rem;}
+
+
+.price-period{display: flex;}
+
+.plan-period{
+    align-self: flex-end;
+    color: grey;
+}
 
 .plan{
     display: flex;
@@ -470,7 +479,6 @@ margin: 0;
 
 .plan .left-btns {
     flex-direction: column;
-    place-items: flex-start;
     gap: 0;
     color: grey;
 }
@@ -874,5 +882,107 @@ footer{
 
 .line{width: 4rem;}
 .bull-line h3 {font-size: 2.6875rem;}
-.brands img{   width: 4rem;}
-.policy-socials .policy-links a  {font-size:0.85rem;}}
+.brands{gap: 6.25rem;}
+.brands img{width: 4rem;}
+.policy-socials .policy-links a  {font-size:0.85rem;}
+}
+
+@media screen and (max-width: 360px){
+    .left-part{padding: 3rem 0 0 0;}
+    .left-part p{
+        font-size: 0.95rem;
+        text-align: center;
+    }
+    .left-banner{width: 10rem;}
+    .right-part img:nth-child(1){
+        position: relative;
+        top: 3.25rem;
+        left: 8.5rem;
+        height: 2rem;
+    }
+    .right-part img:nth-child(2){
+        position: relative;
+        top:3.25rem;
+        left:4.9rem;
+    }
+    .right-part img:nth-child(3){
+        position: relative;
+        top: 3.25rem;
+        left: 13rem;
+    }
+    .right-part img:nth-child(4){
+        position: relative;
+        right: 5.5rem;
+        top: 14rem;
+    }
+    .right-part img:nth-child(5){
+        position: relative;
+      top: 14rem;
+      right: 0.45rem;
+    }
+    .right-part img:nth-child(6){
+        position: relative;
+        right: 11rem;
+        top: 22.5rem;
+        height: 2rem;
+    }
+    .right-part img:nth-child(7){
+        position: relative;
+        top: 24rem;
+        right: 8rem;
+    }
+    .right-banner img{ width: 20.5rem;}
+    .why-header p {font-size: 1.35rem;}
+    .bull-box{
+        flex-direction: row;
+        padding: 2rem;
+        gap: 3rem;
+    }
+    .bull-box h3{text-align: start;}
+    .line{display: none;}
+    .bull-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .play-banner div img {
+        margin: 0;
+        width: 20rem;
+    }
+    .play-vid a i {
+        width: 0.75rem;
+        height: 0.75rem;
+        font-size: 1rem;
+        top: -7rem;
+    }
+    .hubspot{padding: 0 0 5rem 0;}
+    .person img:nth-child(1){
+        height: 29rem;
+        width: 14rem;
+    }
+    .person img:nth-child(2){width: 17rem;}
+     
+    .brands {
+        flex-direction: column;
+        height: auto;
+        gap: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+
+   .plan{width: 16rem}
+.price-period{justify-content: center;}
+   .planprice{padding: 0;}
+    .planprice p{
+        color: #5F6368;
+        font-size: 2rem;
+    }
+    .top-plan-row{
+        display: flex;
+        flex-direction: column;
+    }
+    .bottom-plan-row, .top-plan-row{
+     display: flex;
+     flex-direction: column;
+    }
+    .left-hire{flex-direction: column;}
+    .left-top-hire{text-align: -webkit-center;}
+    .left-bottom-hire{align-self: center;}
