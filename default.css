@@ -1,9 +1,9 @@
+* {max-width: 100%;}
+
 body { 
     height: 100%;
-    max-width: 100%;
     margin: 0;
     font-family: 'Inter', sans-serif;
-    border: 1px solid red;
 }
 ul{
     padding: 0;
