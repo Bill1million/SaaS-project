@@ -186,7 +186,10 @@ display: flex;
     align-self: stretch;
   }
 
-.benefits-header{text-align: center;}
+.benefits-header{
+    text-align: center;
+ padding: 0.25rem;
+}
 .benefits-header h1 {margin: 0;}
 
 .benefits-list {
@@ -209,7 +212,7 @@ display: flex;
     font-weight: 500;
 }
 
-.benefits a{font-size: 1.25rem;}
+.benefits a{font-size: 1rem;}
    
   .card1, .card2, .card3, .card4 {
     display: flex;
@@ -544,7 +547,7 @@ margin: 0;
 .left-hire-quote{
     font-style: italic;
     line-height: 1.5rem;
-    width: 22rem;
+    width: 20rem;
 }
 
 .left-top-hire p {
@@ -828,18 +831,18 @@ footer{
             display: block;
             position: absolute;
             right: 0;
-            top: 3.125rem;
+            top: 50px;
             background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.7)); 
             width: 100%;
             text-align: right;
-            box-shadow: 0px 0px 1.25rem rgba(52, 46, 75, 0.1);
+            box-shadow: 0px 0px 20px rgba(52, 46, 75, 0.1);
         }
     [aria-expanded="true"] ~ ul li a {
-        margin-right: 1.25rem;
+        margin-right: 20px;
         color: #666;
     }
 
-    .navbar-toggler{margin-top: 1rem;}
+.navbar-toggler{margin-top: 1rem;}
 
 .header-section{flex-direction: column;}
 
@@ -915,29 +918,6 @@ footer{
 }
 
 @media screen and (max-width: 360px){
-
-    [aria-controls="navbarDropdown"] {
-        display: block;
-        }    
-
-    [aria-expanded="false"] ~ ul {
-            display: none;
-        }
-    [aria-expanded="true"] ~ ul {
-            display: block;
-            position: absolute;
-            right: 0;
-            top: 3.125rem;
-            background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.7)); 
-            width: 100%;
-            text-align: right;
-            box-shadow: 0px 0px 1.25rem rgba(52, 46, 75, 0.1);
-        }
-    [aria-expanded="true"] ~ ul li a {
-        margin-right: 1.25rem;
-        color: #666;
-    }
-
     .navbar-toggler{margin-top: 1rem;}
 
     .nav-container{padding: 0;}
@@ -953,7 +933,7 @@ footer{
     .right-part img:nth-child(1){
         position: relative;
         top: 3.25rem;
-        left: 8.5rem;
+        left: 16.5rem;
         height: 2rem;
     }
     .right-part img:nth-child(2){
@@ -1024,7 +1004,7 @@ footer{
     .person {
         flex: 1;
         display: grid;
-        grid-template-columns: repeat(14, 1fr);
+        grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(13, 1fr);
     }
 
@@ -1054,7 +1034,7 @@ footer{
    .plan-table{max-width: 100%;}
    .price-period{justify-content: center;}
    .planprice{padding: 0;}
-
+    .price-title p{padding: 0.5rem;}
    .planprice p{
         color: #5F6368;
         font-size: 2rem;
@@ -1063,19 +1043,34 @@ footer{
         display: flex;
         flex-direction: column;
     }
+    .top-plan-left, .top-plan-right, .bottom-plan-left, .bottom-plan-right{
+        min-width: 0;
+    }
     .bottom-plan-row, .top-plan-row{
      display: flex;
      flex-direction: column;
     }
+    .cancel{
+        display: flex;
+        font-size: 1.35rem;
+        gap: 0.5rem;
+        font-weight: 600;
+    }
+    .cancel a {font-size: 1rem;}
 
     .left-hire{flex-direction: column;}
     .left-top-hire{text-align: -webkit-center;}
     .left-bottom-hire{align-self: center;}
-.features{padding: 0;}
+    .features{padding: 0;}
     .form{
         max-width: 17rem;
         margin: 1.125rem 0;
     }
+
+    .logo-contact{
+    text-align: center;
+    align-items: center;
+}
 
    .input-row1, .input-row2, .input-row3 {flex-direction: column;}
    .input-row3 select {width: 19rem;}
