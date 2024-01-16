@@ -377,9 +377,9 @@ font-weight: 800;
 }
 
 .person img:nth-child(2){
-   grid-column: 7;
+   grid-column: 7 / 14;
    grid-row: 1 / 4 ;
-   height: 24rem;
+   height: 22rem;
   
 }
 
@@ -755,7 +755,6 @@ footer{
 .policy-socials{
     display: flex;
     width: 100%;
-    justify-content: space-between;
 }
 
  .policy-links {
@@ -772,6 +771,7 @@ footer{
     display:flex;
     gap: 1.25rem;
     align-items: flex-end; 
+    margin: 0 2.25rem 0 35rem;
 }
 
 .social-links a i{
@@ -910,10 +910,35 @@ footer{
 .bull-line h3 {font-size: 2.6875rem;}
 .brands{gap: 6.25rem;}
 .brands img{width: 4rem;}
+.social-links{margin: 0 2.25rem 0 5rem;}
 .policy-socials .privacy-links a  {font-size:0.85rem;}
 }
 
 @media screen and (max-width: 360px){
+
+    [aria-controls="navbarDropdown"] {
+        display: block;
+        }    
+
+    [aria-expanded="false"] ~ ul {
+            display: none;
+        }
+    [aria-expanded="true"] ~ ul {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 3.125rem;
+            background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.7)); 
+            width: 100%;
+            text-align: right;
+            box-shadow: 0px 0px 1.25rem rgba(52, 46, 75, 0.1);
+        }
+    [aria-expanded="true"] ~ ul li a {
+        margin-right: 1.25rem;
+        color: #666;
+    }
+
+    .navbar-toggler{margin-top: 1rem;}
 
     .nav-container{padding: 0;}
 
@@ -979,6 +1004,7 @@ footer{
         display: flex;
         flex-direction: column;
     }
+    .play-banner{margin: 0;}
     .play-banner div img {
         margin: 0;
         width: 20rem;
@@ -990,21 +1016,39 @@ footer{
         top: -7rem;
     }
 
-    .hubspot{padding: 0 0 5rem 0;}
+    .hubspot{
+        flex-direction: column;
+        padding: 0 0 5rem 0;
+    }
+
+    .person {
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(13, 1fr);
+    }
 
     .person img:nth-child(1){
         height: 29rem;
         width: 14rem;
+        grid-column: 2 / 10;
+        grid-row: 2 / 14;
     }
 
-    .person img:nth-child(2){width: 17rem;}
-     
+    
+    .person img:nth-child(2) {
+        grid-column: 4 / 14;
+        grid-row: 2 / 12;
+        height: 24rem;
+        width: 17rem;
+    }
     .brands {
         flex-direction: column;
         height: auto;
         gap: 1.25rem;
         margin-bottom: 1.25rem;
     }
+    .brands img {width: 8rem;}
 
    .plan{width: 16rem}
    .plan-table{max-width: 100%;}
@@ -1049,4 +1093,5 @@ footer{
     gap: 1.88rem;
     align-items: center;
 }
+.social-links {margin: 0;}
 }
