@@ -1,6 +1,5 @@
 * {max-width: 100%;}
 
-
 body { 
     height: 100%;
     margin: 0;
@@ -31,4 +30,11 @@ a {text-decoration: none;}
 }
 #selected{
     color: #2476FF;
+}
+@media (min-width: 1200px){
+ .container(max-width: max-width: 1140px)
+}
+
+* {
+    outline: solid 1px red;
 }
