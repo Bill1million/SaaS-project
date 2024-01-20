@@ -224,7 +224,7 @@ display: flex;
 
 .benefits-header p {
     margin-top: 0.63rem;
-    font-size: 1.28rem;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
@@ -1056,7 +1056,7 @@ footer{
 
     
     .person img:nth-child(2) {
-        grid-column: 4 / 14;
+        grid-column: 4 / 12;
         grid-row: 2 / 12;
         height: 24rem;
         width: 17rem;
@@ -1073,15 +1073,15 @@ footer{
    .plan-table{max-width: 100%;}
    .price-period{justify-content: center;}
    .planprice{padding: 0;}
-    
+   .plan-features{padding: 0}
    .price-title p{
-        font-size: 1.95rem;
-        padding: 0.5rem;}
+        font-size: 1.5rem;
+        padding: 0 3.5rem;}
    .planprice p{
         color: #5F6368;
         font-size: 2rem;
     }
-    .plan-features{padding: 0}
+    
     .top-plan-row{
         display: flex;
         flex-direction: column;
@@ -1115,11 +1115,11 @@ footer{
    .input-row1, .input-row2, .input-row3 {flex-direction: column;}
    .input-row3 select {width: 19rem;}
    #project-comment{width: 93%;}
-.policy-links a:nth-child(2){display: none;}
-.contact-policies input {width: 4.23rem;}
-.top-foot{flex-direction: column;}
+   .policy-links a:nth-child(2){display: none;}
+   .contact-policies input {width: 4.23rem;}
+   .top-foot{flex-direction: column;}
 
-.foot-nav{
+   .foot-nav{
     flex-direction: column;
     align-content: center;
 }
